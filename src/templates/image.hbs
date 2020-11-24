@@ -1,0 +1,27 @@
+{{#each this}}
+<li class="gallery__card" id="{{id}}" key="{{id}}">
+    <div class="gallery__card_photo">
+        <img src="{{webformatURL}}" data-largeImg="largeImageURL" alt="{{tags}}" width="280"
+            class="gallery__card_photo-card" />
+
+        <div class="stats">
+            <p class="stats_item">
+                <i class="material-icons">thumb_up</i>
+                {{likes}}
+            </p>
+            <p class="stats_item">
+                <i class="material-icons">visibility</i>
+                {{views}}
+            </p>
+            <p class="stats_item">
+                <i class="material-icons">comment</i>
+                {{comments}}
+            </p>
+            <p class="stats_item">
+                <i class="material-icons">cloud_download</i>
+                {{downloads}}
+            </p>
+        </div>
+    </div>
+</li>
+{{/each}}
